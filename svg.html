@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tutorial de html y css</title>
+        <link rel="stylesheet" type="text/css" href="Estilos/estilo_parcial.css">
+    </head>
+    
+    <body>
+            <header>
+                <img src="Imagenes/imagen3.png" width="100%">
+            </header>
+
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="bordes.html"> Bordes </a> </li>
+                    <li> <a href="sombras.html"> Sombras </a> </li>
+                    <li> <a href="listas.html"> Listas </a> </li>
+                    <li> <a href="imagenes.html"> Imagenes </a> </li>
+                    <li> <a href="enlaces.html"> Enlaces </a> </li>
+                    <li> <a href="formularios.html"> Formularios </a> </li>
+                    <li> <a href="columnas_texto.html"> Columnas de Texto </a> </li>
+                    <li> <a href="transparencias_y_degradados.html"> Transparencias y degradados </a> </li>
+                    <li> <a href="audio_y_video.html"> Audio y video </a> </li>
+                    <li> <a href="animaciones.html"> Animaciones </a> </li>
+                    <li> <a href="svg.html"> SVG (Graficos Vectoriales) </a> </li>
+                    <li> <a href="contenido_editable.html"> Contenido Editable </a> </li>
+                </ul>
+            </nav>
+
+            <section>
+                <h1>SVG</h1>
+
+                <h2> Etiqueta < svg > </h2>
+                <p>
+                    Lo primero y obligatorio es agrupar todos los atributos dentro de un < svg>.
+                </p>
+                <div id="borde_redondeado2">
+                    < svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" >
+                    < /svg >
+                </div>
+
+                <h2> Atributo < rect > </h2>
+
+                <div id="columnas_svg">
+                    <li> <b> x: </b> Coordenada horizontal desde donde se va a empezar a dibujar el rectángulo. </li>
+                    <li> <b> y: </b> Coordenada vertical desde donde se va a empezar a dibujar el rectángulo. </li>
+                    <li> <b> rx: </b> Suavidad de los bordes horizontales (el valor 0 equivale a esquinas puntiagudas "no redondeadas"). </li>
+                    <li> <b> ry: </b> Suavidad de los bordes verticales (el valor 0 equivale a esquinas puntiagudas "no redondeadas"). </li>
+                    <li> <b> width: </b> Anchura del rectángulo. </li>
+                    <li> <b> height: </b> Altura del rectángulo. </li>
+                    <li> <b> fill: </b> Color del relleno. </li>
+                    <li> <b> stroke: </b> Color de la línea que rodea al rectángulo. </li>
+                    <li> <b> stroke-width: </b> Grosor de la línea. </li>
+                    <li> <b> opacity: </b> Opacidad. </li>
+                </div>
+
+                <h3>Codigo para un rectangulo</h3>
+                <div id="borde_redondeado2">
+                    < rect width="150" height="90"  fill="gold" stroke="black" stroke-width="1"/>
+                </div>
+
+                <h3>Ejemplo rectangulo</h3>
+                <svg width="150" height="90">
+                    <rect width="150" height="90"  fill="gold" stroke="black" stroke-width="1"/>
+                </svg>
+
+                <h2> Atributo < circle > </h2>
+
+                <div id="columnas_svg">
+                    <li> <b> cx: </b> Coordenada horizontal del centro del círculo. </li>
+                    <li> <b> cy: </b> Coordenada vertical del centro del círculo. </li>
+                    <li> <b> r: </b> Radio del círculo (es la mitad de su anchura o altura total). </li>
+                    <li> <b> fill: </b> Color del relleno. </li>
+                    <li> <b> stroke: </b> Color de la línea que rodea al círculo). </li>
+                    <li> <b> stroke-width: </b> Grosor de la línea. </li>
+                    <li> <b> opacity: </b> Opacidad. </li>
+                </div>
+
+                <h3>Codigo para un circulo</h3>
+                <div id="borde_redondeado2">
+                    < circle cx="75" cy="45" r="35" fill="green"/>
+                </div>
+
+                <h3>Ejemplo circulo</h3>
+                <svg width="150" height="90">
+                    <circle cx="75" cy="45" r="35" fill="green"/>
+                </svg>
+
+
+
+            <footer>
+                <h4 id="footer">
+                    Estudiantes: Camila Andrea Collazos Ortiz.
+                    <br>
+                                 Yeison Alejandro Anaya Velasco.
+                </h4>
+            </footer>
+    
+    </body>
+</html>

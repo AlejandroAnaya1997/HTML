@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tutorial de html y css</title>
+        <link rel="stylesheet" type="text/css" href="Estilos/estilo_parcial.css">
+    </head>
+    
+    <body>
+            <header>
+                <img src="Imagenes/imagen3.png" width="100%">
+            </header>
+
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="bordes.html"> Bordes </a> </li>
+                    <li> <a href="sombras.html"> Sombras </a> </li>
+                    <li> <a href="listas.html"> Listas </a> </li>
+                    <li> <a href="imagenes.html"> Imagenes </a> </li>
+                    <li> <a href="enlaces.html"> Enlaces </a> </li>
+                    <li> <a href="formularios.html"> Formularios </a> </li>
+                    <li> <a href="columnas_texto.html"> Columnas de Texto </a> </li>
+                    <li> <a href="transparencias_y_degradados.html"> Transparencias y degradados </a> </li>
+                    <li> <a href="audio_y_video.html"> Audio y video </a> </li>
+                    <li> <a href="animaciones.html"> Animaciones </a> </li>
+                    <li> <a href="svg.html"> SVG (Graficos Vectoriales) </a> </li>
+                    <li> <a href="contenido_editable.html"> Contenido Editable </a> </li>
+                </ul>
+            </nav>
+
+            <section>
+                <h1>FORMULARIOS</h1>
+
+                <h2> Etiquetas para formularios </h2>
+                <p>
+                    Lo primero a tener en cuenta hace referencia a la estructura general. Así, todas las etiquetas que vamos a utilizar para el formulario tienen que estar ubicadas dentro de las etiquetas del formulario < form > y < /form >.
+                </p>
+
+                <h2> Estructura y Etiquetas </h2>
+                <div id="borde_redondeado_G">
+                    <ul>
+                        <li> <b> type </b> indica qué tipo de datos estamos pidiendo. </li>
+                        <li> <b> size </b> especifica el tamaño del campo requerido. </li>
+                        <li> <b> title </b> incluye un texto adicional cuando el cursor esté encima. </li>
+                        <li> <b> name </b> es la forma de identificar al valor cuando se envie la información. </li>
+                        <li> <b> aotofocus </b> señala el campo con el que el formulario iniciará por defecto, además solo puede haber uno en todo el formulario. </li>
+                        <li> <b> required </b> indica que el campo es obligatorio y si no se rellena no se podrá enviar la información. </li>
+                    </ul>
+                </div>
+                
+
+                <h2> Usuario - (text) </h2>
+                <div id="borde_redondeado_G">
+                    < input type="text" size="40" title="Escribe tu usuario. " name="usuario" autofocus required/ >
+                </div>
+
+                <h2> Contraseña - (password) </h2>
+                <div id="borde_redondeado_G">
+                    < input type="password" size="7" title="Escribe la contraseña" name="password" required/ >
+                </div>
+
+                <h2> Correo Electrónico - (email) </h2>
+                <div id="borde_redondeado_G">
+                    < input type="email" placeholder="usuario@dominio.com" size="40" title="Escribe tu correo electrónico" name="mail" required/ >
+                </div>
+
+                <h2> Fecha - (date) </h2>
+                <div id="borde_redondeado_G">
+                    < input type="date" value="2000-01-01" name="nacimiento" title="Ingresa tu fecha de nacimiento"/ >
+                </div>
+
+                <h2> Rangos - (range) </h2>
+                <div id="borde_redondeado_G">
+                    < input type="range" min="1" max="7" value="2" step="1" title="Calificanos" name="calificacion"/ >
+                </div>
+
+                <h2> Datos numericos - (number) </h2>
+                <div id="borde_redondeado_G">
+                    < input type="number" min="0" max="10" step="1" title="Cuantos hermanos tienes" name="hermanos"/ >
+                </div>
+
+                <h2> (CheckBox) </h2>
+                <div id="borde_redondeado_G">
+                    Materias favoritas
+                    <br>
+                    < input type="checkbox" name="materia1" value="Matemáticas" checked/ > Matemáticas
+                    <br>
+                    < input type="checkbox" name="materia2" value="Lenguaje"/ > Lenguaje
+                    <br>
+                    < input type="checkbox" name="materia3" value="Sociales" / > Sociales
+                </div>
+
+                <h2> Enviar - (submit) </h2>
+                <div id="borde_redondeado_G">
+                    < input type="submit" value="Enviar datos"/ >
+                </div>
+
+                <h2 align="center"> IMPLEMENTACIÓN DE FORMULARIO </h2>
+
+
+
+                <div align="center">
+                    <form action="" method="" id="form1">
+                        <th>
+                            <td> <input type="text" placeholder="Usuario" size="40" title="Escribe tu usuario. " name="usuario" required/> </td>
+                            <td> <input type="password" placeholder="Contraseña" size="40" title="Escribe la contraseña" name="password" required/> </td>
+                        </th>
+                        <br>
+                        <th>
+                            <td> <input type="email" placeholder="Correo electronico" size="40" title="Escribe tu correo electrónico" name="mail" required/> </td>
+                            <td> <input type="date" placeholder="2000-01-01" value="2000-01-01" name="nacimiento" title="Ingresa tu fecha de nacimiento"/> </td>
+                        </th>
+                        <h3>Calificanos</h3>
+                        <input type="range" min="1" max="5" value="2" step="1" title="Calificanos" name="calificacion"/>
+                        <br>
+                        <input type="number" placeholder="Cantidad de carros" min="0" max="10" step="1" title="Cuantos carros tienes" name="carros"/>
+                        <br>
+                        <h3>Carro Favorito</h3>
+
+                        <td><input type="checkbox" name="carro1" value="Ford" checked/> Ford
+                            <input type="checkbox" name="carro2" value="Mercedes Benz"/> Mercedes Benz
+                            <input type="checkbox" name="carro3" value="Bmw"/> Bmw
+                        </td>
+                        <br>
+                        <input type="submit" name="Enviar">
+                        <input type="reset" name="restablecer">
+
+
+
+
+            </section>
+
+
+            <footer>
+                
+                <h4 id="footer">
+                    Estudiantes: Camila Andrea Collazos Ortiz.
+                    <br>
+                                 Yeison Alejandro Anaya Velasco.
+                </h4>
+            </footer>
+    
+    </body>
+</html>

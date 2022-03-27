@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tutorial de html y css</title>
+        <link rel="stylesheet" type="text/css" href="Estilos/estilo_parcial.css">
+    </head>
+    
+    <body>
+            <header>
+                <img src="Imagenes/imagen4.png" width="100%">
+            </header>
+
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="bordes.html"> Bordes </a> </li>
+                    <li> <a href="sombras.html"> Sombras </a> </li>
+                    <li> <a href="listas.html"> Listas </a> </li>
+                    <li> <a href="imagenes.html"> Imagenes </a> </li>
+                    <li> <a href="enlaces.html"> Enlaces </a> </li>
+                    <li> <a href="formularios.html"> Formularios </a> </li>
+                    <li> <a href="columnas_texto.html"> Columnas de Texto </a> </li>
+                    <li> <a href="transparencias_y_degradados.html"> Transparencias y degradados </a> </li>
+                    <li> <a href="audio_y_video.html"> Audio y video </a> </li>
+                    <li> <a href="animaciones.html"> Animaciones </a> </li>
+                    <li> <a href="svg.html"> SVG (Graficos Vectoriales) </a> </li>
+                    <li> <a href="contenido_editable.html"> Contenido Editable </a> </li>
+                </ul>
+            </nav>
+
+            <section>
+                <h1>COLUMNAS DE TEXTO</h1>
+
+                <h2> Estructura y Etiquetas </h2>
+                <div id="borde_redondeado_G">
+                    <ul>
+                        <li> <b> column-count </b> definie el número de columnas en las que queremos dividir el texto. </li>
+                        <li> <b> column-gap </b> definine el espacio en píxeles que existirá como mínimo entre las columnas. </li>
+                        <li> <b> column-rule </b> define a la línea separadora que hay entre las columnas y contiene 3 valores ('grosor de la línea', 'el tipo de separador' y 'su color'). </li>
+                    </ul>
+                </div>
+
+                <h2> column-count </h2>
+                <div id="borde_redondeado">
+                    column-count:2;
+                </div>
+
+                <h2> column-gap </h2>
+                <div id="borde_redondeado">
+                    column-gap:10px;
+                </div>
+
+                <h2> column-rule </h2>
+                <div id="borde_redondeado">
+                    column-rule:4px dotted gray;
+                </div>
+
+                <h2>Escogemos el texto al que asignaremos en columnas</h2>
+                <p>
+                    Este texto puede ser un párrafo muy largo o bien una lista de palabras.
+                </p>
+                <div id="borde_redondeado_G">
+                    < div id="columnas">
+                    <br>
+                        &nbsp &nbsp < li> Afganistan: Kabul. < /li>
+                        <br>
+                        &nbsp &nbsp < li> Albania: Tirana. < /li>
+                        <br>
+                        &nbsp &nbsp < li> Alemania: Berlín. < /li>
+                        <br>
+                        &nbsp &nbsp < li> Andorra : Andorra La Vella. < /li>
+                        <br>
+                        &nbsp &nbsp < li> Angola: Luanda. < /li>
+                        <br>
+                        &nbsp &nbsp < li> Luxemburgo: Luxemburgo. < /li>
+                        <br>
+                        &nbsp &nbsp < li> Malasia: Kuala Lumpur. < /li>
+                        <br>
+                        &nbsp &nbsp < li> Mónaco: Mónaco. < /li>
+                        <br>
+                        &nbsp &nbsp < li> China: Pekín. < /li>
+                        <br>
+                    < /div>
+                </div>
+
+                <h2>Ingresamos las características de las columnas en CSS</h2>
+                <p>
+                    Seguidamente el código que indicará el número de columnas, la separación y el tipo de separadores irán en el espacio reservado para el código CSS.
+                </p>
+                <div id="borde_redondeado_G">
+                    #columnas{
+                        <br>
+                        &nbsp &nbsp column-count:4;
+                        <br>
+                        &nbsp &nbsp column-gap: 20px;
+                        <br>
+                        &nbsp &nbsp column-rule:4px double rgb(0, 70, 110);
+                        <br>
+                    }
+                </div>
+
+
+                <h2> EJEMPLO </h2>
+                <div id="columnas">
+                    <li> Afganistan: Kabul. </li>
+                    <li> Albania: Tirana. </li>
+                    <li> Alemania: Berlín. </li>
+                    <li> Andorra : Andorra La Vella. </li>
+                    <li> Angola: Luanda. </li>
+                    <li> Luxemburgo: Luxemburgo. </li>
+                    <li> Malasia: Kuala Lumpur. </li>
+                    <li> Mónaco: Mónaco. </li>
+                    <li> China: Pekín. </li>
+
+                </div>
+
+            </section>
+
+
+            <footer>
+                
+                <h4 id="footer">
+                    Estudiantes: Camila Andrea Collazos Ortiz.
+                    <br>
+                                 Yeison Alejandro Anaya Velasco.
+                </h4>
+            </footer>
+    
+    </body>
+</html>

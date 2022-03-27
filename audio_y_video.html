@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tutorial de html y css</title>
+        <link rel="stylesheet" type="text/css" href="Estilos/estilo_parcial.css">
+    </head>
+    
+    <body>
+            <header>
+                <img src="Imagenes/imagen2.png" width="100%">
+            </header>
+
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="bordes.html"> Bordes </a> </li>
+                    <li> <a href="sombras.html"> Sombras </a> </li>
+                    <li> <a href="listas.html"> Listas </a> </li>
+                    <li> <a href="imagenes.html"> Imagenes </a> </li>
+                    <li> <a href="enlaces.html"> Enlaces </a> </li>
+                    <li> <a href="formularios.html"> Formularios </a> </li>
+                    <li> <a href="columnas_texto.html"> Columnas de Texto </a> </li>
+                    <li> <a href="transparencias_y_degradados.html"> Transparencias y degradados </a> </li>
+                    <li> <a href="audio_y_video.html"> Audio y video </a> </li>
+                    <li> <a href="animaciones.html"> Animaciones </a> </li>
+                    <li> <a href="svg.html"> SVG (Graficos Vectoriales) </a> </li>
+                    <li> <a href="contenido_editable.html"> Contenido Editable </a> </li>
+                </ul>
+            </nav>
+
+            <section>
+                <h1>AUDIO Y VIDEO</h1>
+
+                <h2> Audio </h2>
+                <p>
+                    Existen diferentes formatos de audio y desgraciadamente no existe ninguno que funcione perfectamente en todos los navegadores, por lo que al menos tendremos que utilizar dos formatos para poder abarcarlos a todos.
+                    <br>
+                    Estos 2 formatos de audio son:
+                </p>
+                
+                <div id="borde_redondeado2">
+                    <img src="Imagenes/formato_mp3.png" alt="Imagen mp3" width="50px" height="50px">
+                    El formato MP3 (ficheros con extensión .mp3).
+                </div>
+
+                <div id="borde_redondeado2">
+                    <img src="Imagenes/formato_oog.png" alt="Imagen mp3" width="50px" height="50px">
+                    El formato OGG Vorbis (ficheros con extensión .ogg).
+                </div>
+
+                <h3> Estructura y Etiquetas </h3>
+                <div id="borde_redondeado_G">
+                    <ul>
+                        <li> <b> controls </b> establece si tendrá la barra de navegación. </li>
+                        <li> <b> autoplay </b> indica si el audio se inicia automáticamente al cargar la página. </li>
+                        <li> <b> loop </b> establece si al acabar el audio, éste debe volver a empezar. </li>
+                        <li> <b> preload </b> indica si el audio se empieza a cargar cuando el navegador carga la página. </li>
+                    </ul>
+                </div>
+
+                <h3>Codigo para un único formato de audio</h3>
+                <div id="borde_redondeado2">
+                    < audio src="audio.mp3" autoplay controls loop>
+                    <br>
+                    < /audio>
+                </div>
+
+                <h3> Ejemplo Formato único .mp3</h3>
+
+                <audio src="Audios/mp3_format.mp3" autoplay controls loop>
+                </audio>
+
+                <h3>Codigo para un multples formatos de audio</h3>
+                <div id="borde_redondeado2">
+                    < audio controls>
+                    <br>
+                        &nbsp &nbsp< source src="Audios/mp3_format.mp3">
+                        <br>
+                        &nbsp &nbsp< source src="Audios/ogg_format.ogg">
+                        <br>
+                    < /audio>
+                </div>
+
+                <h3> Ejemplo Formato Multiple .mp3 y .ogg</h3>
+
+                <audio controls>
+                    <source src="Audios/mp3_format.mp3">
+                    <source src="Audios/ogg_format.ogg">
+                </audio>
+
+
+                <h2> Video </h2>
+                <p>
+                    Aunque el código HTML5 para la inserción de vídeo directamente en HTML5 es muy sencillo, todavía tiene un único inconveniente. No todos los navegadores aceptan todos los formatos de vídeo existentes. 
+                    <br>
+                    Actualmente existen 3 estándares de vídeo que utilizan códecs diferentes y que vienen impulsados por grandes empresas.
+                </p>
+
+                <div id="borde_redondeado2">
+                    <img src="Imagenes/formato_mp4.png" alt="Imagen mp3" width="50px" height="50px">
+                    El formato MP4 (ficheros con extensión .mp4 o .mov).
+                </div>
+
+                <div id="borde_redondeado2">
+                    <img src="Imagenes/formato_oog.png" alt="Imagen mp3" width="50px" height="50px">
+                    El formato OGG (ficheros con extensión .ogv).
+                </div>
+
+                <div id="borde_redondeado2">
+                    <img src="Imagenes/formato_webM.png" alt="Imagen mp3" width="50px" height="50px">
+                    El formato WebM (ficheros con extensión .webm).
+                </div>
+
+                <h3> Estructura y Etiquetas </h3>
+                <div id="borde_redondeado_G">
+                    <ul>
+                        <li> <b> width </b> indica la anchura del vídeo, expresada en píxeles (px) o en porcentaje (%) </li>
+                        <li> <b> height </b> indica la altura del vídeo, expresada en píxeles (px) o en porcentaje (%) </li>
+                        <li> <b> controls </b> establece si tendrá la barra de navegación. </li>
+                        <li> <b> autoplay </b> indica si el vídeo se inicia detenido o ya aparece por defecto reproduciéndose. </li>
+                        <li> <b> loop </b> establece si al acabar el vídeo, éste debe volver a empezar o no. </li>
+                        <li> <b> muted </b> indica si el audio se reproduce o se reproduce sin audio. </li>
+                        <li> <b> preload </b> indica si el vídeo se empieza a cargar cuando el navegador carga la página html. </li>
+                        <li> <b> poster </b> da la posibilidad de establecer una imagen (jpg, gif o png) como fotograma inicial del video. </li>
+                    </ul>
+                </div>
+
+                <h3>Codigo para un único formato de video</h3>
+                <div id="borde_redondeado_G">
+                    < video width="800" height="600" controls autoplay loop poster="fotograma.png">
+                        <br>
+                        &nbsp &nbsp < source src="video.ogv" type="video/ogg"/>
+                        <br>
+                    < /video>
+                </div>
+
+                <h3> Ejemplo Formato único .mp4</h3>
+
+                <video width="800" height="600" controls autoplay loop poster="fotograma.png">
+                    <source src="Videos/mp4_format.mp4"/>
+                </video>
+
+            <footer>
+                <h4 id="footer">
+                    Estudiantes: Camila Andrea Collazos Ortiz.
+                    <br>
+                                 Yeison Alejandro Anaya Velasco.
+                </h4>
+            </footer>
+    
+    </body>
+</html>

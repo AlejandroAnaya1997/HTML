@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tutorial de html y css</title>
+        <link rel="stylesheet" type="text/css" href="Estilos/estilo_parcial.css">
+    </head>
+    
+    <body>
+            <header>
+                <img src="Imagenes/imagen1.png" width="100%">
+            </header>
+
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="bordes.html"> Bordes </a> </li>
+                    <li> <a href="sombras.html"> Sombras </a> </li>
+                    <li> <a href="listas.html"> Listas </a> </li>
+                    <li> <a href="imagenes.html"> Imagenes </a> </li>
+                    <li> <a href="enlaces.html"> Enlaces </a> </li>
+                    <li> <a href="formularios.html"> Formularios </a> </li>
+                    <li> <a href="columnas_texto.html"> Columnas de Texto </a> </li>
+                    <li> <a href="transparencias_y_degradados.html"> Transparencias y degradados </a> </li>
+                    <li> <a href="audio_y_video.html"> Audio y video </a> </li>
+                    <li> <a href="animaciones.html"> Animaciones </a> </li>
+                    <li> <a href="svg.html"> SVG (Graficos Vectoriales) </a> </li>
+                    <li> <a href="contenido_editable.html"> Contenido Editable </a> </li>
+                </ul>
+            </nav>
+
+            <section>
+                <h1>CONTENIDO EDITABLE</h1>
+
+                <p>
+                    Para que un contenido sea editable (es decir, para que el usuario pueda modificar, eliminar o añadir texto) desde el propio navegador, dicho texto tiene que estar ubicado dentro de un < div 
+                    > o de una etiqueta semántica (article, section...) con la propiedad 'contenteditable=true':
+                </p>
+
+                <h3>Codigo para un contenido editable</h3>
+                <div id="borde_redondeado2">
+                    < section id="editable" contenteditable="true">
+                    <br>
+                    &nbsp &nbsp &nbsp < h2>Escribe el tipo de carro que te gusta< /h2>
+                    <br>
+                    &nbsp &nbsp &nbsp &nbsp < ul>
+                    <br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp < li>Ford< /li>
+                    <br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp < li>Mercedes Benz< /li>
+                    <br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp < li>Bmw< /li>
+                    <br>
+                    &nbsp &nbsp &nbsp &nbsp < /ul>
+                    <br>
+                    < /section>  
+                </div>
+
+                <h3> Ejemplo Contenido Editable</h3>
+
+                <div id="borde_redondeado_edit">
+                    <section id="editable" contenteditable="true">
+                        <h3>Escribe el tipo de carro que te gusta</h3>
+                        <ol>
+                            <li>Ford</li>
+                            <li>Mercedes Benz</li>
+                            <li>Bmw</li>
+                        </ol>    
+                    </section>  
+                </div>
+                
+            <footer>
+                <h4 id="footer">
+                    Estudiantes: Camila Andrea Collazos Ortiz.
+                    <br>
+                                 Yeison Alejandro Anaya Velasco.
+                </h4>
+            </footer>
+    
+    </body>
+</html>

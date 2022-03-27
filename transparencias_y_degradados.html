@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tutorial de html y css</title>
+        <link rel="stylesheet" type="text/css" href="Estilos/estilo_parcial.css">
+    </head>
+    
+    <body>
+            <header>
+                <img src="Imagenes/imagen4.png" width="100%">
+            </header>
+
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="bordes.html"> Bordes </a> </li>
+                    <li> <a href="sombras.html"> Sombras </a> </li>
+                    <li> <a href="listas.html"> Listas </a> </li>
+                    <li> <a href="imagenes.html"> Imagenes </a> </li>
+                    <li> <a href="enlaces.html"> Enlaces </a> </li>
+                    <li> <a href="formularios.html"> Formularios </a> </li>
+                    <li> <a href="columnas_texto.html"> Columnas de Texto </a> </li>
+                    <li> <a href="transparencias_y_degradados.html"> Transparencias y degradados </a> </li>
+                    <li> <a href="audio_y_video.html"> Audio y video </a> </li>
+                    <li> <a href="animaciones.html"> Animaciones </a> </li>
+                    <li> <a href="svg.html"> SVG (Graficos Vectoriales) </a> </li>
+                    <li> <a href="contenido_editable.html"> Contenido Editable </a> </li>
+                </ul>
+            </nav>
+
+            <section>
+                <h1>TRANSPARENCIAS Y DEGRADADOS</h1>
+
+                <h2> Transparencias </h2>
+                <p>
+                    En CSS3, se pueden definir transparencias, ya sea en el color de fondo de un <div> en concreto como en algunos elementos individuales.
+                    <br>
+                    Así, para definir un color de fondo con un índice de transparencia determinado utilizamos 'rgba (rojo, verde, azul, transparencia)':
+                </p>
+                <div id="borde_redondeado_G">
+                    background-color:rgba(255,0,0, 0.4);
+                </div>
+
+                <h4>Transparencia 40%</h4>
+                <div id="transparencia40"> </div>
+                <h4>Transparencia 100%</h4>
+                <div id="transparencia100"> </div>
+
+                <h3>Atributo 'opacity'</h3>
+                <p>
+                    Otra posibilidad que existe es utilizar el atributo 'opacity', indicando los mismos valores de 0: totalmente transparente a 1: totalmente opaco.
+                </p>
+                <div id="borde_redondeado_G">
+                    opacity: 0.4;
+                </div>
+                <br>
+                <div id="opacidad40"> TEXTO </div>
+                <div id="opacidad100"> TEXTO </div>
+
+
+                <h2> Degradados Lineales </h2>
+                <p>
+                    Primero definimos dónde empieza el degradado (top, bottom, right, left) o bien indicando un ángulo (45deg), seguido de los colores que compondrán el degradado y de manera opcional se puede indicar cuánto durará cada color (en porcentaje).
+                </p>
+                <div id="borde_redondeado_G">
+                    background:linear-gradient(dónde empieza, color1, 40%, color2, 60%);
+                </div>
+                <h3>Ejemplo Lineal</h3>
+
+                <div id="degradado_lineal"> </div>
+
+
+
+                <h2> Degradados Radiales </h2>
+                <p>
+                    Primero definimos dónde está el centro del degradado a través de una posición horizontal y luego una vertical (utilizando center, top, bottom, right, left o unas coordenadas en píxeles 125px 200px). Seguidamente se define la forma (circle o ellipse). Después opcionalmente se puede definir cómo se expandirá el degradado. Por último se definen los colores que compondrán el degradado y de manera opcional se puede indicar cuánto durará cada color (en porcentaje).
+                </p>
+                <div id="borde_redondeado_G">
+                    background:radial-gradient(dónde está el centro, circle/ellipse expansión del degradado, color1, 40%, color2, 60%);
+                </div>
+                <h3>Ejemplo Radial</h3>
+
+                <div id="degradado_radial"> </div>
+
+
+            </section>
+
+
+            <footer>
+                
+                <h4 id="footer">
+                    Estudiantes: Camila Andrea Collazos Ortiz.
+                    <br>
+                                 Yeison Alejandro Anaya Velasco.
+                </h4>
+            </footer>
+    
+    </body>
+</html>

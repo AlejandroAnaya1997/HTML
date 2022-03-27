@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tutorial de html y css</title>
+        <link rel="stylesheet" type="text/css" href="Estilos/estilo_parcial.css">
+    </head>
+    
+    <body>
+            <header>
+                <img src="Imagenes/imagen2.png" width="100%">
+            </header>
+
+            <nav id="navegacion">
+                <ul>
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="bordes.html"> Bordes </a> </li>
+                    <li> <a href="sombras.html"> Sombras </a> </li>
+                    <li> <a href="listas.html"> Listas </a> </li>
+                    <li> <a href="imagenes.html"> Imagenes </a> </li>
+                    <li> <a href="enlaces.html"> Enlaces </a> </li>
+                    <li> <a href="formularios.html"> Formularios </a> </li>
+                    <li> <a href="columnas_texto.html"> Columnas de Texto </a> </li>
+                    <li> <a href="transparencias_y_degradados.html"> Transparencias y degradados </a> </li>
+                    <li> <a href="audio_y_video.html"> Audio y video </a> </li>
+                    <li> <a href="animaciones.html"> Animaciones </a> </li>
+                    <li> <a href="svg.html"> SVG (Graficos Vectoriales) </a> </li>
+                    <li> <a href="contenido_editable.html"> Contenido Editable </a> </li>
+                </ul>
+            </nav>
+
+            <section>
+                <h1>ENLACES</h1>
+
+                <h3> Estos son algunos tipos de enlaces: </h3>
+                <div id="borde_redondeado_G">
+                    <ul type="square">
+                        <h4>
+                            <li> <a href="#propias" id="enlaces"> <h4> A páginas HTML externas propias hechas por nosotros. </h4></a> </li>
+                            <li> <a href="#interno" id="enlaces"> <h4> A partes internas del mismo HTML. </h4></a> </li>
+                            <li> <a href="#terceros" id="enlaces"> <h4> A páginas HTML de terceros. </h4></a> </li>
+
+                            <li> <a href="#ficheros" id="enlaces"> <h4> A ficheros pdf, jpg, gif, png, svg. </h4></a> </li>
+                             </li>
+                        </h4>
+                    </ul>
+                </div>
+
+                <h3> En todos los casos utilizamos la misma etiqueta < a > para abrir y < /a > para cerrar: </h3>
+                <div id="borde_redondeado_G">
+                    < a href=<b>"fichero_a_abrir.html"</b> > Enlace < /a >
+                </div>
+
+
+
+                <h2 id="propias"> Enlazar con páginas HTML propias hechas por nosotros </h2>
+                <p>
+                    En el siguiente ejemplo se crea un enlace de texto, que será "Galería de Imágenes", y que -al hacer clic- comunicará con el archivo galeria.html (ubicados ambos ficheros en la misma carpeta): 
+                </p>
+                <div id="borde_redondeado_G">
+                    < a href="<b>galeria.html</b>" >Galería de Imágenes< /a > 
+                </div>
+
+                <br>
+                <div align="center">
+                    < a href="index.html" > Enlace a pagina de INICIO < /a >
+                    <a href="index.html"> <h4> Enlace a pagina de INICIO </h4></a>
+                </div>
+                <br>
+
+
+
+                <h2 id="interno"> Enlaces a una parte interna de nuestro HTML </h2>
+                <p>
+                    Es posible realizar un enlace que comunique con una parte en concreto de nuestro HTML.
+                    <br>
+                    Para ello hay que especificar a qué parte del documento HTML se desea acceder, especificando el nombre id de un elemento ubicado en dicho lugar, anteponiendo el símbolo '#' antes de dicho nombre. Es decir, es necesario que exista una etiqueta HTML con el nombre id especificado (id="nombre"), y que además esté ubicado en el lugar del HTML al que se desea acceder.
+                </p>
+                <div id="borde_redondeado_G">
+                    < a href="#inicio">Enlace< /a >
+                </div>
+
+                <br>
+                <div align="center">
+                    < a href="#navegacion"> Botones navegacion < /a >
+                    <a href="#navegacion"> <h4> Botones navegacion </h4></a>
+                </div>
+                <br>
+
+
+
+                <h2 id="terceros"> Enlazar con páginas HTML de terceros </h2>
+                <p>
+                    Para enlazar con páginas web externas realizadas por otras personas, tendremos que añadir el atributo target="_blank", para que dicha página no se abra en la misma ventana del navegador (cerrando por lo tanto nuestra web) y que ésta se abra en una nueva pestaña del navegador.
+                </p>
+                <div id="borde_redondeado_G">
+                    < a href="https://www.html6.es/t1_5_enlaces.html" target="_blank" > Nombre Página de Terceros < /a >
+                </div>
+
+                <br>
+                <div align="center">
+                    < a href="https://www.html6.es/t1_5_enlaces.html" target="_blank" > Nombre Página de Terceros < /a >
+                    <a href="https://www.html6.es/t1_5_enlaces.html" target="_blank"> <h4> Enlaces HTML </h4> </a>
+                </div>
+                <br>
+
+            </section>
+
+            <footer>
+                
+                <h4 id="footer">
+                    Estudiantes: Camila Andrea Collazos Ortiz.
+                    <br>
+                                 Yeison Alejandro Anaya Velasco.
+                </h4>
+            </footer>
+    
+    </body>
+</html>

@@ -1,0 +1,231 @@
+body{
+    background: #FFFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-seri;
+}
+
+h4#footer{
+    color: #283350;
+    text-align: right;
+}
+
+nav ul li{
+    border-radius: 5px;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+    text-shadow: 0px 1px 0px #283350;
+}
+
+nav{
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom,#283350, rgb(179, 179, 179));  
+
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0 10px 0 10px;
+    padding: 0;
+}
+
+
+nav ul li a{
+    color: rgb(192, 0, 0);
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.18s linear all;
+}
+
+hr{
+    border-width: 10PX;
+    border-style: dotted;
+    border-color: #f93800;
+    width: 50%;
+}
+
+#borde{
+    border-top: 3px solid #f93800;
+    border-bottom: 2px dotted #ffb500;
+
+    border-right: 10px dashed #283350;
+    border-left: 10px inset #283350;
+    padding: 20px 20px;
+}
+
+#borde_redondeado_G{
+    width: 50%;
+    border-radius: 5px;
+    background-color: #f93800;
+    border: 3px solid rgb(58, 103, 228);
+    padding: 20px;
+}
+
+#borde_redondeado{
+    width: 300px;
+    border-radius: 5px;
+    background-color: #283350;
+    border: 3px solid rgb(58, 103, 228);
+    padding: 9px;
+}
+
+#borde_redondeado2{
+    width: 600px;
+    border-radius: 5px;
+    background-color: #ffb500;
+    border: 3px solid rgb(58, 103, 228);
+    padding: 9px;
+}
+
+#borde_redondeado3{
+    width: 350px;
+    border-radius: 5px;
+    background-color: #f93800;
+    border: 3px solid rgb(58, 103, 228);
+    padding: 9px;
+}
+
+#sombra{
+    box-shadow: 6px 20px 10px #283350;
+}
+
+section
+{
+    box-shadow: 6px 20px 10px #f93800;
+}
+
+footer{
+    padding-top: 400px;
+    box-shadow: 5px 20px 1px #ffb500;
+}
+
+#interna{
+    background: blueviolet;
+    padding: 20px 20px;
+    box-shadow: 7px 9px 5px coral inset;
+}
+
+#resplandor{
+    background: #242fc9;
+    box-shadow: 0px 0px 30px #283350;
+    width: 50%;
+}
+
+#sombra_texto{
+    text-shadow: 10px 10px 5px rgb(32, 0, 90);
+}
+
+#sombra_multiple{
+    box-shadow: 0px 0px 20px red inset, 0px 0px 25px #283350;
+    text-shadow: 10px 10px 5px rgb(32, 0, 90);
+    padding: 20px 20px;
+    width: 70%;
+}
+
+img{
+    max-width:100%;
+    vertical-align:top;
+}
+
+a#enlaces{
+    color: rgb(7, 0, 48);
+}
+
+#form1 input[type="text"],
+#form1 input[type="password"],
+#form1 input[type="email"],
+#form1 input[type="date"],
+#form1 input[type="range"],
+#form1 input[type="number"],
+#form1 input[type="submit"],
+#form1 input[type="reset"]
+{
+	max-width: 400px;
+	margin: 10px auto;
+    width: 50%;
+    border: 5px solid #f93800;
+    border-radius: 10px;
+    background-color: #283350;
+    padding: 10px;
+}
+
+#form1 h3{
+	max-width: 600px;
+	margin: 2px auto;
+    height: 20px;
+    text-align: middle;
+    border-radius: 5px;
+    background-color: #ffb500;
+    padding: 20px;
+}
+
+#columnas{
+    column-count:5;
+    column-gap:20px;
+    column-rule:4px double rgb(0, 70, 110);
+}
+
+div#transparencia40{
+    background-color:rgba(255,0,0, 0.4);
+    height: 50px;
+    width: 50px;
+}
+
+div#transparencia100{
+    background-color:rgba(255,0,0, 1);
+    height: 50px;
+    width: 50px;
+}
+
+div#opacidad40{
+    background-color:rgb(155, 0, 0);
+    color: black;
+    opacity: 0.4;
+}
+
+div#degradado_lineal{
+    background-image: linear-gradient(to top, red, gold);  
+    height: 100px;
+    width: 300px;
+}
+
+div#degradado_radial{
+    background-image: radial-gradient(black, #1162ac);
+    height: 100px;
+    width: 300px;
+}
+
+#columnas_svg{
+    column-count:2;
+    column-gap:20px;
+    column-rule:4px double rgb(0, 70, 110);
+}
+
+#editable{
+    overflow:auto;
+}
+
+#martillo {
+    animation:animacion_martillo 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s; 
+}
+
+@keyframes animacion_martillo{
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}

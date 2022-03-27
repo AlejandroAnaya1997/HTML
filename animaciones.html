@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tutorial de html y css</title>
+        <link rel="stylesheet" type="text/css" href="Estilos/estilo_parcial.css">
+    </head>
+    
+    <body>
+            <header>
+                <img src="Imagenes/imagen4.png" width="100%">
+            </header>
+
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="bordes.html"> Bordes </a> </li>
+                    <li> <a href="sombras.html"> Sombras </a> </li>
+                    <li> <a href="listas.html"> Listas </a> </li>
+                    <li> <a href="imagenes.html"> Imagenes </a> </li>
+                    <li> <a href="enlaces.html"> Enlaces </a> </li>
+                    <li> <a href="formularios.html"> Formularios </a> </li>
+                    <li> <a href="columnas_texto.html"> Columnas de Texto </a> </li>
+                    <li> <a href="transparencias_y_degradados.html"> Transparencias y degradados </a> </li>
+                    <li> <a href="audio_y_video.html"> Audio y video </a> </li>
+                    <li> <a href="animaciones.html"> Animaciones </a> </li>
+                    <li> <a href="svg.html"> SVG (Graficos Vectoriales) </a> </li>
+                    <li> <a href="contenido_editable.html"> Contenido Editable </a> </li>
+                </ul>
+            </nav>
+
+            <section>
+                <h1>ANIMACIONES</h1>
+
+                <h2>Cremos el objeto que deseamos animar</h2>
+                <div id="borde_redondeado_G">
+                    < div id="martillo">
+                    <br>
+                    &nbsp &nbsp<    svg width="120" height="190" xmlns="http://www.w3.org/2000/svg")>
+                    <br>
+                        &nbsp &nbsp &nbsp &nbsp <   rect x="43" y="10" width="14" height="160" rx="6" ry="5" fill="#895111"/>
+                        <br>
+                        &nbsp &nbsp &nbsp &nbsp <   rect x="43" y="10" width="14" height="160" rx="6" ry="5" fill="#895111"/>
+                        <br>
+                        &nbsp &nbsp &nbsp &nbsp <   rect x="45" y="15" width="4" height="150" rx="6" ry="6" fill="#A68661"/>
+                        <br>
+                        &nbsp &nbsp &nbsp &nbsp <   rect x="10" y="22" width="80" height="45" rx="14" ry="12" fill="#6E6E5F"/>
+                        <br>
+                        &nbsp &nbsp &nbsp &nbsp <   rect x="20" y="37" width="62" height="24" rx="6" ry="6" fill="#898982"/>
+                        <br>
+                        &nbsp &nbsp &nbsp &nbsp <   rect x="20" y="25" width="62" height="6" rx="4" ry="4" fill="#C2C2B6"/>
+                        <br>
+                        &nbsp &nbsp &nbsp &nbsp <   rect x="43" y="67" width="14" height="9" fill="#482907"/>
+                        <br>
+                        &nbsp &nbsp &nbsp<  /svg>
+                        <br>
+                    <   /div>
+                </div>
+
+                <h2>Establecemos la animacion</h2>
+                <div id="borde_redondeado_G">
+                    #martillo {
+                        <br>
+                    &nbsp &nbsp animation:animacion_martillo 2s;
+                        <br>
+                    }
+                </div>
+
+                <h2>Animación Compleja</h2>
+                <div id="borde_redondeado_G">
+                    #martillo{
+                        <br>
+                    &nbsp &nbsp animation:animacion_martillo 2s;
+                    <br>
+                    &nbsp &nbsp animation-timing-function: ease-out;
+                    <br>
+                    &nbsp &nbsp animation-iteration-count: infinite;
+                    <br>
+                    &nbsp &nbsp animation-direction: alternate;
+                    <br>
+                    &nbsp &nbsp animation-delay: 1s; 
+                    <br>
+                    }
+                </div>
+
+                <h2>Definimos como será la animacion</h2>
+                <div id="borde_redondeado_G">
+                    @keyframes animacion_martillo {
+                        <br>
+                    &nbsp &nbsp 0% {
+                        <br>
+                    &nbsp &nbsp &nbsp transform: rotate(0deg);
+                    <br>
+                    &nbsp &nbsp }
+                    <br>
+                    &nbsp &nbsp 50% {
+                        <br>
+                    &nbsp &nbsp &nbsp transform: rotate(90deg);
+                    <br>
+                    &nbsp &nbsp }
+                    <br>
+                    &nbsp &nbsp 100% {
+                        <br>
+                    &nbsp &nbsp &nbsp transform: rotate(0deg);
+                    <br>
+                    &nbsp &nbsp }
+                    <br>
+                    }
+                </div>
+
+                <br><br><br>
+
+                <div id="martillo" align="center">
+                    <svg width="120" height="190" xmlns="http://www.w3.org/2000/svg")>
+                      <rect x="43" y="10" width="14" height="160" rx="6" ry="5" fill="#895111"/>
+                      <rect x="43" y="10" width="14" height="160" rx="6" ry="5" fill="#895111"/>
+                      <rect x="45" y="15" width="4" height="150" rx="6" ry="6" fill="#A68661"/>
+                      <rect x="10" y="22" width="80" height="45" rx="14" ry="12" fill="#6E6E5F"/>
+                      <rect x="20" y="37" width="62" height="24" rx="6" ry="6" fill="#898982"/>
+                      <rect x="20" y="25" width="62" height="6" rx="4" ry="4" fill="#C2C2B6"/>
+                      <rect x="43" y="67" width="14" height="9" fill="#482907"/>
+                    </svg>
+                </div>
+                
+
+
+
+
+
+            <footer>
+                <h4 id="footer">
+                   Estudiantes: Camila Andrea Collazos Ortiz.
+                    <br>
+                                 Yeison Alejandro Anaya Velasco.
+                </h4>
+            </footer>
+    
+    </body>
+</html>
